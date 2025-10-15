@@ -5,6 +5,7 @@ namespace lab03_kalk_proc
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Kalkulator procentowy";
         }
     }
 }
