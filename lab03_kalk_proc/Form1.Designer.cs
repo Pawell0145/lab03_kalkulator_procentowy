@@ -28,40 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
-            numericUpDown1 = new NumericUpDown();
-            precentSet = new NumericUpDown();
+            conteinerNUM = new NumericUpDown();
+            precentSub = new NumericUpDown();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            comboBox1 = new ComboBox();
+            containerComboBox = new ComboBox();
             label5 = new Label();
             delButton = new Button();
             addButton = new Button();
             label6 = new Label();
             label7 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)precentSet).BeginInit();
+            totalVolume = new TextBox();
+            subVolume = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)conteinerNUM).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)precentSub).BeginInit();
             SuspendLayout();
             // 
-            // numericUpDown1
+            // conteinerNUM
             // 
-            numericUpDown1.Location = new Point(191, 109);
-            numericUpDown1.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(72, 23);
-            numericUpDown1.TabIndex = 0;
-            numericUpDown1.ThousandsSeparator = true;
+            conteinerNUM.Location = new Point(191, 109);
+            conteinerNUM.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            conteinerNUM.Name = "conteinerNUM";
+            conteinerNUM.Size = new Size(72, 23);
+            conteinerNUM.TabIndex = 0;
+            conteinerNUM.ThousandsSeparator = true;
             // 
-            // precentSet
+            // precentSub
             // 
-            precentSet.Location = new Point(292, 109);
-            precentSet.Name = "precentSet";
-            precentSet.Size = new Size(43, 23);
-            precentSet.TabIndex = 1;
+            precentSub.Location = new Point(292, 109);
+            precentSub.Name = "precentSub";
+            precentSub.Size = new Size(43, 23);
+            precentSub.TabIndex = 1;
             // 
             // label1
             // 
@@ -99,13 +98,13 @@
             label4.TabIndex = 5;
             label4.Text = "Usuń naczynie";
             // 
-            // comboBox1
+            // containerComboBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(73, 109);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(112, 23);
-            comboBox1.TabIndex = 6;
+            containerComboBox.FormattingEnabled = true;
+            containerComboBox.Location = new Point(73, 109);
+            containerComboBox.Name = "containerComboBox";
+            containerComboBox.Size = new Size(112, 23);
+            containerComboBox.TabIndex = 6;
             // 
             // label5
             // 
@@ -152,73 +151,64 @@
             label7.TabIndex = 11;
             label7.Text = "Obj. czystej substancji";
             // 
-            // textBox1
+            // totalVolume
             // 
-            textBox1.Location = new Point(178, 204);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 12;
+            totalVolume.Location = new Point(178, 204);
+            totalVolume.Name = "totalVolume";
+            totalVolume.ReadOnly = true;
+            totalVolume.Size = new Size(100, 23);
+            totalVolume.TabIndex = 12;
             // 
-            // textBox2
+            // subVolume
             // 
-            textBox2.Location = new Point(202, 230);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 13;
+            subVolume.Location = new Point(202, 230);
+            subVolume.Name = "subVolume";
+            subVolume.ReadOnly = true;
+            subVolume.Size = new Size(100, 23);
+            subVolume.TabIndex = 13;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(subVolume);
+            Controls.Add(totalVolume);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(addButton);
             Controls.Add(delButton);
             Controls.Add(label5);
-            Controls.Add(comboBox1);
+            Controls.Add(containerComboBox);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(precentSet);
-            Controls.Add(numericUpDown1);
+            Controls.Add(precentSub);
+            Controls.Add(conteinerNUM);
             Name = "Form1";
-            Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)precentSet).EndInit();
+            Text = "Kalkulator procentowy";
+            ((System.ComponentModel.ISupportInitialize)conteinerNUM).EndInit();
+            ((System.ComponentModel.ISupportInitialize)precentSub).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private NumericUpDown numericUpDown1;
-        private NumericUpDown precentSet;
+        private NumericUpDown conteinerNUM;
+        private NumericUpDown precentSub;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
-        private ComboBox comboBox1;
+        private ComboBox containerComboBox;
         private Label label5;
         private Button delButton;
         private Button addButton;
         private Label label6;
         private Label label7;
-        private TextBox textBox1;
-        private TextBox textBox2;
-=======
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
-        }
-
-        #endregion
->>>>>>> 1bc17dce2c0d2b95d07e1b2f6d4d73dce9a59e0e
+        private TextBox totalVolume;
+        private TextBox subVolume;
     }
 }
