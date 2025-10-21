@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             numericUpDown1 = new NumericUpDown();
             precentSet = new NumericUpDown();
             label1 = new Label();
@@ -210,5 +211,14 @@
         private Label label7;
         private TextBox textBox1;
         private TextBox textBox2;
+=======
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form1";
+        }
+
+        #endregion
+>>>>>>> 1bc17dce2c0d2b95d07e1b2f6d4d73dce9a59e0e
     }
 }
