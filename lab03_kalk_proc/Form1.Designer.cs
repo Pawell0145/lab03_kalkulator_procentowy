@@ -54,6 +54,7 @@
             conteinerNUM.Size = new Size(72, 23);
             conteinerNUM.TabIndex = 0;
             conteinerNUM.ThousandsSeparator = true;
+            conteinerNUM.ValueChanged += conteinerNUM_ValueChanged;
             // 
             // precentSub
             // 
@@ -61,6 +62,7 @@
             precentSub.Name = "precentSub";
             precentSub.Size = new Size(43, 23);
             precentSub.TabIndex = 1;
+            precentSub.ValueChanged += precentSub_ValueChanged;
             // 
             // label1
             // 
@@ -105,6 +107,7 @@
             containerComboBox.Name = "containerComboBox";
             containerComboBox.Size = new Size(112, 23);
             containerComboBox.TabIndex = 6;
+            containerComboBox.SelectedIndexChanged += containerComboBox_SelectedIndexChanged;
             // 
             // label5
             // 
@@ -123,6 +126,7 @@
             delButton.TabIndex = 8;
             delButton.Text = "Usuń";
             delButton.UseVisualStyleBackColor = true;
+            delButton.Click += delButton_Click;
             // 
             // addButton
             // 
@@ -132,6 +136,7 @@
             addButton.TabIndex = 9;
             addButton.Text = "Dodaj";
             addButton.UseVisualStyleBackColor = true;
+            addButton.Click += addButton_Click;
             // 
             // label6
             // 
@@ -158,6 +163,7 @@
             totalVolume.ReadOnly = true;
             totalVolume.Size = new Size(100, 23);
             totalVolume.TabIndex = 12;
+            totalVolume.TextChanged += totalVolume_TextChanged;
             // 
             // subVolume
             // 
@@ -166,6 +172,7 @@
             subVolume.ReadOnly = true;
             subVolume.Size = new Size(100, 23);
             subVolume.TabIndex = 13;
+            subVolume.TextChanged += subVolume_TextChanged;
             // 
             // Form1
             // 

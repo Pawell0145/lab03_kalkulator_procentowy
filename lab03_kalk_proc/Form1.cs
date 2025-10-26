@@ -6,10 +6,42 @@ namespace lab03_kalk_proc
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
 
-        
-=======
->>>>>>> 1bc17dce2c0d2b95d07e1b2f6d4d73dce9a59e0e
+        private void conteinerNUM_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void precentSub_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void containerComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void totalVolume_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void subVolume_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
+
