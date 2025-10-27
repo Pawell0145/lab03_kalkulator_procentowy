@@ -30,6 +30,11 @@ namespace lab03_kalk_proc
         // Metoda do obliczenia objętości czystej substancji
         public double Clean_subst_vol()
         {
+            if (subst_percent < 0 || subst_percent > 100)
+            {
+                MessageBox.Show("Procent substancji musi być w zakresie od 0 do 100.");
+                throw new ArgumentOutOfRangeException("subst_percent", "Procent substancji musi być w zakresie od 0 do 100.");
+            }
             return Subst_sum() * (subst_percent / 100);
         }
     }
