@@ -37,11 +37,19 @@
             containerComboBox = new ComboBox();
             label5 = new Label();
             delButton = new Button();
-            addButton = new Button();
+            conteinerAdd = new Button();
             label6 = new Label();
             label7 = new Label();
             totalVolume = new TextBox();
             subVolume = new TextBox();
+            liquidComboBox = new ComboBox();
+            liquidAdd = new Button();
+            liquidDel = new Button();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            resButton = new Button();
+            clearButton = new Button();
             ((System.ComponentModel.ISupportInitialize)conteinerNUM).BeginInit();
             ((System.ComponentModel.ISupportInitialize)precentSub).BeginInit();
             SuspendLayout();
@@ -54,15 +62,13 @@
             conteinerNUM.Size = new Size(72, 23);
             conteinerNUM.TabIndex = 0;
             conteinerNUM.ThousandsSeparator = true;
-            conteinerNUM.ValueChanged += conteinerNUM_ValueChanged;
             // 
             // precentSub
             // 
-            precentSub.Location = new Point(292, 109);
+            precentSub.Location = new Point(200, 224);
             precentSub.Name = "precentSub";
             precentSub.Size = new Size(43, 23);
             precentSub.TabIndex = 1;
-            precentSub.ValueChanged += precentSub_ValueChanged;
             // 
             // label1
             // 
@@ -85,7 +91,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(292, 91);
+            label3.Location = new Point(200, 206);
             label3.Name = "label3";
             label3.Size = new Size(63, 15);
             label3.TabIndex = 4;
@@ -107,7 +113,6 @@
             containerComboBox.Name = "containerComboBox";
             containerComboBox.Size = new Size(112, 23);
             containerComboBox.TabIndex = 6;
-            containerComboBox.SelectedIndexChanged += containerComboBox_SelectedIndexChanged;
             // 
             // label5
             // 
@@ -126,22 +131,20 @@
             delButton.TabIndex = 8;
             delButton.Text = "Usuń";
             delButton.UseVisualStyleBackColor = true;
-            delButton.Click += delButton_Click;
             // 
-            // addButton
+            // conteinerAdd
             // 
-            addButton.Location = new Point(162, 162);
-            addButton.Name = "addButton";
-            addButton.Size = new Size(87, 23);
-            addButton.TabIndex = 9;
-            addButton.Text = "Dodaj";
-            addButton.UseVisualStyleBackColor = true;
-            addButton.Click += addButton_Click;
+            conteinerAdd.Location = new Point(162, 162);
+            conteinerAdd.Name = "conteinerAdd";
+            conteinerAdd.Size = new Size(87, 23);
+            conteinerAdd.TabIndex = 9;
+            conteinerAdd.Text = "Dodaj";
+            conteinerAdd.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(73, 207);
+            label6.Location = new Point(440, 162);
             label6.Name = "label6";
             label6.Size = new Size(99, 15);
             label6.TabIndex = 10;
@@ -150,7 +153,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(73, 238);
+            label7.Location = new Point(440, 193);
             label7.Name = "label7";
             label7.Size = new Size(123, 15);
             label7.TabIndex = 11;
@@ -158,32 +161,109 @@
             // 
             // totalVolume
             // 
-            totalVolume.Location = new Point(178, 204);
+            totalVolume.Location = new Point(545, 159);
             totalVolume.Name = "totalVolume";
             totalVolume.ReadOnly = true;
             totalVolume.Size = new Size(100, 23);
             totalVolume.TabIndex = 12;
-            totalVolume.TextChanged += totalVolume_TextChanged;
             // 
             // subVolume
             // 
-            subVolume.Location = new Point(202, 230);
+            subVolume.Location = new Point(569, 185);
             subVolume.Name = "subVolume";
             subVolume.ReadOnly = true;
             subVolume.Size = new Size(100, 23);
             subVolume.TabIndex = 13;
-            subVolume.TextChanged += subVolume_TextChanged;
+            // 
+            // liquidComboBox
+            // 
+            liquidComboBox.FormattingEnabled = true;
+            liquidComboBox.Location = new Point(73, 223);
+            liquidComboBox.Name = "liquidComboBox";
+            liquidComboBox.Size = new Size(121, 23);
+            liquidComboBox.TabIndex = 14;
+            // 
+            // liquidAdd
+            // 
+            liquidAdd.Location = new Point(162, 273);
+            liquidAdd.Name = "liquidAdd";
+            liquidAdd.Size = new Size(87, 23);
+            liquidAdd.TabIndex = 17;
+            liquidAdd.Text = "Dodaj";
+            liquidAdd.UseVisualStyleBackColor = true;
+            // 
+            // liquidDel
+            // 
+            liquidDel.Location = new Point(73, 273);
+            liquidDel.Name = "liquidDel";
+            liquidDel.Size = new Size(83, 23);
+            liquidDel.TabIndex = 18;
+            liquidDel.Text = "Usuń";
+            liquidDel.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(73, 205);
+            label8.Name = "label8";
+            label8.Size = new Size(92, 15);
+            label8.TabIndex = 19;
+            label8.Text = "Wybierz roztwór";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(73, 255);
+            label9.Name = "label9";
+            label9.Size = new Size(77, 15);
+            label9.TabIndex = 20;
+            label9.Text = "Usuń roztwór";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(162, 255);
+            label10.Name = "label10";
+            label10.Size = new Size(81, 15);
+            label10.TabIndex = 21;
+            label10.Text = "Dodaj roztwór";
+            // 
+            // resButton
+            // 
+            resButton.Location = new Point(569, 223);
+            resButton.Name = "resButton";
+            resButton.Size = new Size(75, 23);
+            resButton.TabIndex = 22;
+            resButton.Text = "Wynik";
+            resButton.UseVisualStyleBackColor = true;
+            // 
+            // clearButton
+            // 
+            clearButton.Location = new Point(464, 224);
+            clearButton.Name = "clearButton";
+            clearButton.Size = new Size(75, 23);
+            clearButton.TabIndex = 23;
+            clearButton.Text = "Wyczyść";
+            clearButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(clearButton);
+            Controls.Add(resButton);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(liquidDel);
+            Controls.Add(liquidAdd);
+            Controls.Add(liquidComboBox);
             Controls.Add(subVolume);
             Controls.Add(totalVolume);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(addButton);
+            Controls.Add(conteinerAdd);
             Controls.Add(delButton);
             Controls.Add(label5);
             Controls.Add(containerComboBox);
@@ -212,10 +292,18 @@
         private ComboBox containerComboBox;
         private Label label5;
         private Button delButton;
-        private Button addButton;
+        private Button conteinerAdd;
         private Label label6;
         private Label label7;
         private TextBox totalVolume;
         private TextBox subVolume;
+        private ComboBox liquidComboBox;
+        private Button liquidAdd;
+        private Button liquidDel;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Button resButton;
+        private Button clearButton;
     }
 }
