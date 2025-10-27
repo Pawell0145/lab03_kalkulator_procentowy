@@ -24,6 +24,16 @@ namespace lab03_kalk_proc
         // Metoda do obliczenia łącznej objętości
         public double Subst_sum()
         {
+            if (dish_numb < 0)
+            {
+                MessageBox.Show("Liczba naczyń nie może być ujemna.");
+                throw new ArgumentOutOfRangeException("dish_numb", "Liczba naczyń nie może być ujemna.");
+            }
+            if (dish_vol < 0)
+            {
+                MessageBox.Show("Objętość naczynia nie może być ujemna.");
+                throw new ArgumentOutOfRangeException("dish_vol", "Objętość naczynia nie może być ujemna.");
+            }
             return dish_vol * dish_numb;
         }
 

@@ -68,7 +68,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(73, 103);
+            label2.Location = new Point(58, 103);
             label2.Name = "label2";
             label2.Size = new Size(31, 15);
             label2.TabIndex = 3;
@@ -86,20 +86,20 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(87, 207);
+            label6.Location = new Point(62, 207);
             label6.Name = "label6";
-            label6.Size = new Size(99, 15);
+            label6.Size = new Size(124, 15);
             label6.TabIndex = 10;
-            label6.Text = "Łączna obj. płynu";
+            label6.Text = "Łączna obj. płynu (ml)";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(63, 238);
+            label7.Location = new Point(45, 238);
             label7.Name = "label7";
-            label7.Size = new Size(123, 15);
+            label7.Size = new Size(141, 15);
             label7.TabIndex = 11;
-            label7.Text = "Obj. czystej substancji";
+            label7.Text = "Obj. czystej substancji (g)";
             // 
             // totalVolume
             // 
@@ -220,10 +220,8 @@
         #endregion
 
         private NumericUpDown domainUpDownNumb;
-        private NumericUpDown txtBoxPercent;
         private Label label1;
         private Label label2;
-        private Label label3;
         private ComboBox comboBoxDish;
         private Label label6;
         private Label label7;

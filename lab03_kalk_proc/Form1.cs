@@ -6,8 +6,8 @@ namespace lab03_kalk_proc
         {
             InitializeComponent();
             this.Text = "Kalkulator procentowy";
-            this.FormBorderStyle = FormBorderStyle.FixedSingle; //blokada zmiany wilkoœci okna
-            this.MaximizeBox = false;                           //blok maksymalizacji
+            this.FormBorderStyle = FormBorderStyle.FixedSingle; 
+            this.MaximizeBox = false;                           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -29,6 +29,7 @@ namespace lab03_kalk_proc
 
             comboBoxSubst.Items.Add(new KeyValuePair<int, string>(5, "piwo (5%)"));
             comboBoxSubst.Items.Add(new KeyValuePair<int, string>(40, "wódka (40%)"));
+
 
             comboBoxSubst.SelectedIndex = 0;
 
